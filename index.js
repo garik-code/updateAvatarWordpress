@@ -1,6 +1,6 @@
 const User = require('./lib/user');
 
-User.updateAvatar(158, 'https://avatars.githubusercontent.com/u/33745472?v=4').then(successUpdateAvatar => {
+User.updateAvatar(158, 'https://lift700.com/wp-content/uploads/634918436.jpg').then(successUpdateAvatar => {
   // success
   console.log(successUpdateAvatar)
 }, errorUpdateAvatar => {
