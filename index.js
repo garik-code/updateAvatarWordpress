@@ -16,7 +16,7 @@
 
     // Аргументы функции updateAvatar ( ID пользователя Wordpress, ссылка на аватарку на сервере в папке uploads )
 
-    User.updateAvatar(158, 'https://lift700.com/wp-content/uploads/634918436.jpg').then(successUpdateAvatar => {
+    User.updateAvatar(160, 'https://lift700.com/wp-content/uploads/634918436.jpg').then(successUpdateAvatar => {
       // Успешно
       console.log('Success: ', successUpdateAvatar)
     }, errorUpdateAvatar => {
