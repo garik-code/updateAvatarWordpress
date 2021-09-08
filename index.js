@@ -18,8 +18,8 @@
 
     User.updateAvatar(158, 'https://lift700.com/wp-content/uploads/634918436.jpg').then(successUpdateAvatar => {
       // Успешно
-      console.log(successUpdateAvatar)
+      console.log('Success: ', successUpdateAvatar)
     }, errorUpdateAvatar => {
       // Ошибка
-      console.log(errorUpdateAvatar)
+      console.log('Error: ', errorUpdateAvatar)
     })
