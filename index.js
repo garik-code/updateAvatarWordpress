@@ -1,9 +1,25 @@
-const User = require('./lib/user');
 
-User.updateAvatar(158, 'https://lift700.com/wp-content/uploads/634918436.jpg').then(successUpdateAvatar => {
-  // success
-  console.log(successUpdateAvatar)
-}, errorUpdateAvatar => {
-  // error
-  console.log(errorUpdateAvatar)
-})
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    //    ⚠️ ВНИМАНИЕ
+    //
+    //    Фотка должна быть загружена на сервер в папку uploads
+    //    и быть доступна по адресу https://lift700.com/wp-content/uploads/${название фото}.jpg
+    //
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    const User = require('./lib/user'); // Подключаем самописный модуль для обновления аватарки Wordpress
+
+
+    // Аргументы функции updateAvatar ( ID пользователя Wordpress, ссылка на аватарку на сервере в папке uploads )
+
+    User.updateAvatar(158, 'https://lift700.com/wp-content/uploads/634918436.jpg').then(successUpdateAvatar => {
+      // Успешно
+      console.log(successUpdateAvatar)
+    }, errorUpdateAvatar => {
+      // Ошибка
+      console.log(errorUpdateAvatar)
+    })
