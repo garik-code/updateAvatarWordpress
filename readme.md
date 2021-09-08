@@ -1,15 +1,13 @@
-# Обновление аватарки Wordpress
+# Обновление фотографии пользователя Wordpress
+
+``` javascript
+User.updateAvatar(user_id, avatar_url).then(successUpdateAvatar => {
+  // Success
+  console.log(successUpdateAvatar)
+}, errorUpdateAvatar => {
+  // Error
+  console.log(errorUpdateAvatar)
+})
 
 ```
-    User.updateAvatar(user_id, avatar_url).then(successUpdateAvatar => {
-      // Success
-      console.log(successUpdateAvatar)
-    }, errorUpdateAvatar => {
-      // Error
-      console.log(errorUpdateAvatar)
-    })
-
-```
-
-P.S.
-Смотри файл index.js
+Смотри файл [index.js](https://github.com/garik-code/updateAvatarWordpress/blob/master/index.js)
